@@ -52,8 +52,12 @@ app.use('/channels', channels)
 
 
 
-app.get('/', (request, response) => {
-    response.render('home')
+app.get('/', (req, res) => {
+    res.render('home')
+})
+
+app.get('/privacy', (req, res) => {
+    res.render('privacy')
 })
 
 
